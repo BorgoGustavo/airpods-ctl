@@ -9,6 +9,10 @@ public actor AirPodsController {
         self.commands = commands
     }
 
+    public func listDevices() async throws -> [AirPodsDevice] {
+        try await transport.discoverConnectedAirPods()
+    }
+
     public func setMode(_ mode: ListeningMode) async throws {
         let data = commands.setListeningMode(mode)
         try await transport.send(data)
@@ -17,5 +21,9 @@ public actor AirPodsController {
     public func toggle() async throws -> ListeningMode {
         try await setMode(.anc)
         return .anc
+    }
+
+    public func close() async {
+        await transport.close()
     }
 }

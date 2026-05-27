@@ -1,7 +1,11 @@
 import Foundation
 
-public final class IOBluetoothTransport: BluetoothTransport {
+public final class IOBluetoothTransport: BluetoothTransport, @unchecked Sendable {
     public init() {}
+
+    public func discoverConnectedAirPods() async throws -> [AirPodsDevice] {
+        throw TransportError.notImplemented
+    }
 
     public func send(_: Data) async throws {
         throw TransportError.notImplemented
