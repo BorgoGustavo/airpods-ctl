@@ -1,0 +1,360 @@
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Product: Mac16,12  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Firmware Version: 23.5.224.1476  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Chipset: BCM_4388C2, Revision: s=C2  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Transport: PCIe  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Address: 68:5E:DD:94:0A:3F  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Firmware Filename: BCM4388C2_23.5.224.1476_PCIE_macOS_Willamette_Garden_CLPC_OS_AMKOR_20251203.bin  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Bluetooth Host: MobileBluetooth-194.26.1.0.1  
+May 27 16:36:37.656  Note             0x0000  00:00:00:00:00:00  Software: Versão 26.4.1 (Compilação 25E253)  
+May 27 16:37:52.381  Config           0x000B  AirPods Pro        Connected: 40:B3:FA:2F:D2:9E - Handle: 0xB - AirPods Pro - Central - Codec: AAC-ELD - PID/VID 0x2024/0x004C - Ver 0x427  
+May 27 16:37:52.381  Config           0x0000  AirPods Pro - Fin  Connected: 00:00:00:00:00:00 - Handle: 0x0 - AirPods Pro - Find My - 62F04079-CEF8-D8A7-455B-7584CB2F1574  
+May 27 16:37:52.382  Config           0x0044  Pebble K380s       Connected: D4:FA:3B:6A:E0:1E - Handle: 0x44 - Pebble K380s - 2FF3084C-8B5A-930B-851C-45AA30293074  
+May 27 16:37:52.382  Note             0x0000  00:00:00:00:00:00  WiFi State: On, Band: Unknown  
+May 27 16:37:52.397  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:52.400  HCI Event        0x0044  Pebble K380s       Number Of Completed Packets - Handle: 0x0044 - Packets: 0x0001    
+May 27 16:37:52.435  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:52.437  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:52.589  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:52.845  HCI Event        0x0000  7C:22:8A:9C:47:19  LE - Ext ADV - 1 Report - Low Power - Random - 7C:22:8A:9C:47:19 - RSSI: -80 dBm - Channel 39  
+May 27 16:37:52.903  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:52.932  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:52.933  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:53.049  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:53.049  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:53.051  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:53.282  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:53.404  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:53.445  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:53.447  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:53.599  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:53.905  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:53.944  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:53.947  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:54.049  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:54.051  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:54.051  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:54.426  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:54.464  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:54.466  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:54.617  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:54.659  HCI Event        0x0000  AirPods Pro        LE - Ext ADV - 1 Report - Low Power - Public Identity (Resolved Private) - 40:B3:FA:2F:D2:9E - RSSI: -42 dBm - Channel 39  
+May 27 16:37:54.774  AAP Receive      0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:54.963  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:55.002  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:55.005  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:55.060  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:55.060  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:55.061  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:55.461  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:55.498  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:55.499  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:55.653  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:55.788  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:55.972  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:56.002  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:56.004  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:56.060  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:56.060  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:56.062  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:56.500  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:56.533  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:56.533  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:56.534  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:56.540  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:56.540  HCI Event        0x000B  AirPods Pro        Mode Change - Sniff Mode - 120 ms - Handle: 0x000B  
+May 27 16:37:56.540  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:56.771  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:57.013  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:57.054  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:57.054  HCI Command      0x000B  AirPods Pro        Exit Sniff Mode - Connection Handle: 0x000B  
+May 27 16:37:57.056  HCI Event        0x0000  00:00:00:00:00:00  Command Status [0804] - Exit Sniff Mode  
+May 27 16:37:57.062  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:57.062  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:57.100  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:57.108  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:57.108  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:57.108  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:57.108  HCI Event        0x000B  AirPods Pro        Mode Change - Active Mode - Handle: 0x000B  
+May 27 16:37:57.574  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:57.619  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:57.619  HCI Event        0x0000  4A:16:03:E4:9E:CB  LE - Ext ADV - 1 Report - Normal - Random - 4A:16:03:E4:9E:CB - RSSI: -89 dBm - Channel 38  
+May 27 16:37:57.622  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:57.795  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:57.997  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:58.029  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:58.031  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:58.061  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:58.061  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:58.063  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:58.095  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:37:58.099  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:37:58.278  HCI Event        0x0000  67:A7:64:A3:C7:77  LE - Ext ADV - 1 Report - Low Power - Random - 67:A7:64:A3:C7:77 - RSSI: -63 dBm - Channel 39  
+May 27 16:37:58.290  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:58.520  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:58.528  HCI Event        0x0000  55:B5:51:BF:F1:A2  LE - Ext ADV - 1 Report - Normal - Random - 55:B5:51:BF:F1:A2 - RSSI: -87 dBm - Channel 38  
+May 27 16:37:58.550  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:58.556  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:58.556  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:58.853  HCI Event        0x0000  55:B4:5A:E3:25:46  LE - Ext ADV - 1 Report - Low Power - Random - 55:B4:5A:E3:25:46 - RSSI: -68 dBm - Channel 38  
+May 27 16:37:58.868  HCI Event        0x0000  60:A0:3D:A8:B1:66  LE - Ext ADV - 1 Report - Low Power - Random - 60:A0:3D:A8:B1:66 - RSSI: -64 dBm - Channel 38  
+May 27 16:37:59.039  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:59.066  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:59.066  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:59.066  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:37:59.070  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:59.224  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:59.537  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:59.568  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:37:59.571  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:59.722  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:37:59.732  HCI Event        0x0000  7C:22:8A:9C:47:19  LE - Ext ADV - 1 Report - Normal - Random - 7C:22:8A:9C:47:19 - RSSI: -83 dBm - Channel 39  
+May 27 16:38:00.022  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:00.049  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:00.052  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:00.066  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:00.066  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:00.066  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:00.071  HCI Event        0x0000  61:A7:87:CB:EA:DC  LE - Ext ADV - 1 Report - Low Power - Random - 61:A7:87:CB:EA:DC - RSSI: -78 dBm - Channel 39  
+May 27 16:38:00.074  HCI Event        0x0000  6A:35:29:67:0C:76  LE - Ext ADV - 1 Report - Low Power - Random - 6A:35:29:67:0C:76 - RSSI: -66 dBm - Channel 39  
+May 27 16:38:00.258  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.262  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE29] -   
+May 27 16:38:00.262  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.266  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.266  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.270  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.270  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.274  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.274  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.278  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.279  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.283  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.283  HCI Command      0x0000  00:00:00:00:00:00  Set Ext Advertising Disabled  
+May 27 16:38:00.287  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2039] - Set Ext Advertising  
+May 27 16:38:00.287  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.291  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.291  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Parameters V2 - Min/Max Interval: 181.25ms/181.25ms - Handle: 0x0 - SID: 0  
+May 27 16:38:00.295  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [207F] - Set Ext ADV Parameters V2  
+May 27 16:38:00.295  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.299  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.299  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Data - ADV Handle: 0x0  
+May 27 16:38:00.303  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2037] - Set Ext ADV Data  
+May 27 16:38:00.303  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.307  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.307  HCI Command      0x0000  00:00:00:00:00:00  Set Ext Advertising Enabled - Handles: 0x0   
+May 27 16:38:00.311  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2039] - Set Ext Advertising  
+May 27 16:38:00.311  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.315  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.315  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Parameters V2 - Min/Max Interval: 181.25ms/181.25ms - Handle: 0x2 - SID: 2  
+May 27 16:38:00.319  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [207F] - Set Ext ADV Parameters V2  
+May 27 16:38:00.319  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.323  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.323  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Data - ADV Handle: 0x2  
+May 27 16:38:00.327  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2037] - Set Ext ADV Data  
+May 27 16:38:00.327  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.331  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.331  HCI Command      0x0000  00:00:00:00:00:00  Set Ext Advertising Enabled - Handles: 0x2   
+May 27 16:38:00.335  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2039] - Set Ext Advertising  
+May 27 16:38:00.335  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.339  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.339  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Parameters V2 - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+May 27 16:38:00.343  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [207F] - Set Ext ADV Parameters V2  
+May 27 16:38:00.343  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.347  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.347  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Data - ADV Handle: 0x3  
+May 27 16:38:00.351  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2037] - Set Ext ADV Data  
+May 27 16:38:00.351  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.355  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.355  HCI Command      0x0000  00:00:00:00:00:00  Set Ext Advertising Enabled - Handles: 0x3   
+May 27 16:38:00.359  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2039] - Set Ext Advertising  
+May 27 16:38:00.359  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.363  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.363  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Parameters V2 - Min/Max Interval: 181.25ms/181.25ms - Handle: 0x4 - SID: 4  
+May 27 16:38:00.367  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [207F] - Set Ext ADV Parameters V2  
+May 27 16:38:00.367  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.371  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE37] -   
+May 27 16:38:00.371  HCI Command      0x0000  00:00:00:00:00:00  Set Ext ADV Data - ADV Handle: 0x4  
+May 27 16:38:00.375  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2037] - Set Ext ADV Data  
+May 27 16:38:00.375  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.379  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE37] -   
+May 27 16:38:00.379  HCI Command      0x0000  00:00:00:00:00:00  Set Ext Advertising Enabled - Handles: 0x4   
+May 27 16:38:00.383  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [2039] - Set Ext Advertising  
+May 27 16:38:00.383  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.387  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE29] -   
+May 27 16:38:00.490  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.493  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE29] -   
+May 27 16:38:00.493  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.497  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.497  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.501  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.501  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.506  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.506  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.509  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.510  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.514  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.514  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.519  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.519  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.524  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.524  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.527  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.527  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.531  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.531  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.532  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:00.535  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.535  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.538  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.538  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.542  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.542  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.546  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.546  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.550  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.550  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.554  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FCE9] -   
+May 27 16:38:00.555  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.557  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:00.558  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:00.558  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE37] -   
+May 27 16:38:00.558  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.562  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE37] -   
+May 27 16:38:00.562  HCI Command      0x0000  00:00:00:00:00:00  Vendor Specific Command  
+May 27 16:38:00.566  HCI Event        0x0000  00:00:00:00:00:00  Command Complete [FE29] -   
+May 27 16:38:00.742  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:00.796  HCI Event        0x0000  AirPods Pro        LE - Ext ADV - 1 Report - Normal - Public Identity (Resolved Private) - 40:B3:FA:2F:D2:9E - RSSI: -51 dBm - Channel 37  
+May 27 16:38:00.814  HCI Event        0x0000  60:A0:3D:A8:B1:66  LE - Ext ADV - 1 Report - Normal - Random - 60:A0:3D:A8:B1:66 - RSSI: -65 dBm - Channel 37  
+May 27 16:38:00.814  HCI Event        0x0000  C6:2F:0C:1F:E6:EA  LE - Ext ADV - 1 Report - Normal - Random - C6:2F:0C:1F:E6:EA - RSSI: -64 dBm - Channel 37  
+May 27 16:38:00.834  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:01.074  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:01.076  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:01.097  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:01.110  HCI Event        0x0000  7C:22:8A:9C:47:19  LE - Ext ADV - 1 Report - Normal - Random - 7C:22:8A:9C:47:19 - RSSI: -78 dBm - Channel 38  
+May 27 16:38:01.134  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:01.137  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:01.148  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:01.148  HCI Event        0x0000  0C:DB:D5:69:D2:EE  LE - Ext ADV - 1 Report - Low Power - Random - 0C:DB:D5:69:D2:EE - RSSI: -71 dBm - Channel 38  
+May 27 16:38:01.461  HCI Event        0x0000  6A:35:29:67:0C:76  LE - Ext ADV - 1 Report - Low Power - Random - 6A:35:29:67:0C:76 - RSSI: -67 dBm - Channel 39  
+May 27 16:38:01.467  HCI Event        0x0000  64:75:C6:F6:D5:1F  LE - Ext ADV - 1 Report - Low Power - Random - 64:75:C6:F6:D5:1F - RSSI: -48 dBm - Channel 39  
+May 27 16:38:01.618  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:01.662  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:01.665  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:01.817  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:01.997  HCI Event        0x0000  C2:2E:17:FE:61:EA  LE - Ext ADV - 1 Report - Normal - Random - C2:2E:17:FE:61:EA - RSSI: -79 dBm - Channel 38  
+May 27 16:38:02.011  HCI Event        0x0000  D6:A3:66:A4:BE:97  LE - Ext ADV - 1 Report - Normal - Random - D6:A3:66:A4:BE:97 - RSSI: -84 dBm - Channel 38  
+May 27 16:38:02.039  HCI Event        0x0000  55:B4:5A:E3:25:46  LE - Ext ADV - 1 Report - Low Power - Random - 55:B4:5A:E3:25:46 - RSSI: -69 dBm - Channel 38  
+May 27 16:38:02.041  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:02.079  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:02.079  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:02.081  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:02.085  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:02.240  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:02.311  HCI Event        0x0000  D8:20:CA:91:30:A1  LE - Ext ADV - 1 Report - Normal - Random - D8:20:CA:91:30:A1 - RSSI: -83 dBm - Channel 39  
+May 27 16:38:02.320  HCI Event        0x0000  DB:79:D7:DF:5C:E9  LE - Ext ADV - 1 Report - Normal - Random - DB:79:D7:DF:5C:E9 - RSSI: -71 dBm - Channel 39  
+May 27 16:38:02.339  HCI Event        0x0000  73:B1:5F:85:88:FA  LE - Ext ADV - 1 Report - Low Power - Random - 73:B1:5F:85:88:FA - RSSI: -67 dBm - Channel 39  
+May 27 16:38:02.564  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:02.601  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:02.603  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:02.628  HCI Event        0x0000  55:B5:51:BF:F1:A2  LE - Ext ADV - 1 Report - Low Power - Random - 55:B5:51:BF:F1:A2 - RSSI: -86 dBm - Channel 37  
+May 27 16:38:02.656  HCI Event        0x0000  FE:16:33:F1:59:92  LE - Ext ADV - 1 Report - Low Power - Random - FE:16:33:F1:59:92 - RSSI: -76 dBm - Channel 37  
+May 27 16:38:02.673  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:02.673  HCI Event        0x0000  67:A7:64:A3:C7:77  LE - Ext ADV - 1 Report - Low Power - Random - 67:A7:64:A3:C7:77 - RSSI: -57 dBm - Channel 37  
+May 27 16:38:03.056  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:03.086  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.086  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:03.086  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:03.092  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:03.236  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.238  HCI Event        0x0000  7D:9C:5C:09:20:DD  LE - Ext ADV - 1 Report - Low Power - Random - 7D:9C:5C:09:20:DD - RSSI: -77 dBm - Channel 39  
+May 27 16:38:03.245  HCI Event        0x0000  DB:74:56:92:60:87  LE - Ext ADV - 1 Report - Low Power - Random - DB:74:56:92:60:87 - RSSI: -47 dBm - Channel 39  
+May 27 16:38:03.303  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:03.563  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:03.603  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:03.606  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.621  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:03.624  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.625  L2CAP Send       0x000B  AirPods Pro        Channel ID: 0x110C  Length: 0x0003 (03) [ 0A 1B 00 ]  
+May 27 16:38:03.627  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.635  L2CAP Receive    0x000B  AirPods Pro        Channel ID: 0x080F  Length: 0x0002 (02) [ 0B 00 ]  
+May 27 16:38:03.636  ATT Send         0x000B  AirPods Pro        Read Request - Handle:0x0018  
+May 27 16:38:03.638  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.647  ATT Receive      0x000B  AirPods Pro        Read Response - Value: 0000 0000 6210 DA41 3D0A F041 60E5 0C42…  
+May 27 16:38:03.790  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:03.826  HCI Event        0x0000  EC:B3:43:46:FE:B1  LE - Ext ADV - 1 Report - Low Power - Random - EC:B3:43:46:FE:B1 - RSSI: -87 dBm - Channel 38  
+May 27 16:38:04.082  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:04.085  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:04.087  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:04.087  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:04.117  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:04.278  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:04.396  HCI Event        0x0000  FC:C0:3A:20:7F:F8  LE - Ext ADV - 1 Report - Normal - Random - FC:C0:3A:20:7F:F8 - RSSI: -88 dBm - Channel 37  
+May 27 16:38:04.583  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:04.628  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:04.631  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:04.671  AAP Receive      0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:04.676  AAP Receive      0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:04.699  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:04.699  HCI Event        0x0000  C4:24:BB:80:03:7C  LE - Ext ADV - 1 Report - Normal - Random - C4:24:BB:80:03:7C - RSSI: -72 dBm - Channel 38  
+May 27 16:38:04.750  HCI Event        0x0000  61:A7:87:CB:EA:DC  LE - Ext ADV - 1 Report - Low Power - Random - 61:A7:87:CB:EA:DC - RSSI: -72 dBm - Channel 38  
+May 27 16:38:05.045  HCI Event        0x0000  D4:08:17:C9:5B:17  LE - Ext ADV - 1 Report - Low Power - Random - D4:08:17:C9:5B:17 - RSSI: -77 dBm - Channel 39  
+May 27 16:38:05.084  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:05.086  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:05.086  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:05.126  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:05.128  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.280  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.301  HCI Event        0x0000  FF:6E:FC:29:98:FB  LE - Ext ADV - 1 Report - Normal - Random - FF:6E:FC:29:98:FB - RSSI: -45 dBm - Channel 37  
+May 27 16:38:05.598  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:05.627  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:05.634  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.634  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.791  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:05.794  ATT Send         0x000B  AirPods Pro        Read Request - Handle:0x001B  
+May 27 16:38:05.806  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.806  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.806  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:05.824  ATT Receive      0x000B  AirPods Pro        Read Response - Value: 00  
+May 27 16:38:05.824  ATT Send         0x000B  AirPods Pro        Read Request - Handle:0x0018  
+May 27 16:38:05.834  ATT Receive      0x000B  AirPods Pro        Read Response - Value: 0000 0000 6210 DA41 3D0A F041 60E5 0C42…  
+May 27 16:38:05.901  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:05.901  HCI Event        0x0000  7D:9C:5C:09:20:DD  LE - Ext ADV - 1 Report - Normal - Random - 7D:9C:5C:09:20:DD - RSSI: -77 dBm - Channel 39  
+May 27 16:38:06.088  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:06.090  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:06.110  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:06.150  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:06.152  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:06.224  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:06.225  HCI Event        0x0000  C7:42:C5:B8:8A:9D  LE - Ext ADV - 1 Report - Normal - Random - C7:42:C5:B8:8A:9D - RSSI: -58 dBm - Channel 37  
+May 27 16:38:06.629  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:06.675  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:06.678  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:06.785  AAP Receive      0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:06.788  AAP Receive      0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:06.827  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:06.845  HCI Event        0x0000  E5:9C:8B:8B:B7:AC  LE - Ext ADV - 1 Report - Low Power - Random - E5:9C:8B:8B:B7:AC - RSSI: -91 dBm - Channel 39  
+May 27 16:38:07.089  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:07.091  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:07.099  HCI Event        0x0000  F9:F4:93:90:0C:77  LE - Ext ADV - 1 Report - Normal - Random - F9:F4:93:90:0C:77 - RSSI: -75 dBm - Channel 37  
+May 27 16:38:07.133  HCI Event        0x0000  55:B5:51:BF:F1:A2  LE - Ext ADV - 1 Report - Low Power - Random - 55:B5:51:BF:F1:A2 - RSSI: -87 dBm - Channel 37  
+May 27 16:38:07.146  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:07.149  HCI Event        0x0000  EE:1A:E4:79:DB:42  LE - Ext ADV - 1 Report - Low Power - Random - EE:1A:E4:79:DB:42 - RSSI: -72 dBm - Channel 37  
+May 27 16:38:07.188  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:07.190  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:07.340  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:07.454  HCI Event        0x0000  40:F0:18:FB:46:9E  LE - Ext ADV - 1 Report - Low Power - Random - 40:F0:18:FB:46:9E - RSSI: -85 dBm - Channel 38  
+May 27 16:38:07.666  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:07.709  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:07.711  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:07.877  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:08.094  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:08.096  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:08.336  HCI Event        0x0000  00:00:00:00:00:00  Vendor Specific Event  
+May 27 16:38:08.374  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:08.400  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:08.403  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:08.555  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:08.713  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:08.736  AAP Send         0x000B  AirPods Pro        No Decoder Specified  
+May 27 16:38:08.739  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:08.892  HCI Event        0x000B  AirPods Pro        Number Of Completed Packets - Handle: 0x000B - Packets: 0x0001    
+May 27 16:38:08.907  Note             0x0000  00:00:00:00:00:00  Disconnected from OS X Device  

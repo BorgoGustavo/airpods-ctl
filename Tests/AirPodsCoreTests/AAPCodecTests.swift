@@ -3,20 +3,40 @@ import Testing
 
 @Suite("AAP codec")
 struct AAPCodecTests {
-    @Test("Set listening mode ANC encodes to the documented 11-byte packet")
-    func encodeSetListeningModeAnc() {
-        let codec = AAPCodec()
-        let data = codec.encodeSetListeningMode(.anc)
-        let expected: [UInt8] = [0x04, 0x00, 0x04, 0x00, 0x09, 0x00, 0x0D, 0x02, 0x00, 0x00, 0x00]
-        #expect([UInt8](data) == expected)
+    // MARK: - Captured-bytes fixtures
+
+    //
+    // These tests anchor the encoder to bytes captured live from the macOS
+    // Control Center alternating noise modes on AirPods Pro 2 (firmware 8B39)
+    // on 2026-05-28. Raw frames are in
+    // docs/captures/mode-transitions-2026-05-28.pklg. If Apple changes the
+    // protocol in a firmware update, these break first and tell us where.
+
+    @Test("set off — matches Control Center capture (2026-05-28)")
+    func setOff_matchesCapturedBytes() {
+        let captured: [UInt8] = [0x04, 0x00, 0x04, 0x00, 0x09, 0x00, 0x0D, 0x01, 0x00, 0x00, 0x00]
+        #expect([UInt8](AAPCodec().encodeSetListeningMode(.off)) == captured)
     }
 
-    @Test("Mode byte at offset 7 matches each ListeningMode's rawByte", arguments: ListeningMode.allCases)
-    func modeByteAtOffsetSeven(_ mode: ListeningMode) {
-        let codec = AAPCodec()
-        let bytes = [UInt8](codec.encodeSetListeningMode(mode))
-        #expect(bytes[7] == mode.rawByte)
+    @Test("set ANC — matches Control Center capture (2026-05-28)")
+    func setAnc_matchesCapturedBytes() {
+        let captured: [UInt8] = [0x04, 0x00, 0x04, 0x00, 0x09, 0x00, 0x0D, 0x02, 0x00, 0x00, 0x00]
+        #expect([UInt8](AAPCodec().encodeSetListeningMode(.anc)) == captured)
     }
+
+    @Test("set transparency — matches Control Center capture (2026-05-28)")
+    func setTransparency_matchesCapturedBytes() {
+        let captured: [UInt8] = [0x04, 0x00, 0x04, 0x00, 0x09, 0x00, 0x0D, 0x03, 0x00, 0x00, 0x00]
+        #expect([UInt8](AAPCodec().encodeSetListeningMode(.transparency)) == captured)
+    }
+
+    @Test("set adaptive — matches Control Center capture (2026-05-28)")
+    func setAdaptive_matchesCapturedBytes() {
+        let captured: [UInt8] = [0x04, 0x00, 0x04, 0x00, 0x09, 0x00, 0x0D, 0x04, 0x00, 0x00, 0x00]
+        #expect([UInt8](AAPCodec().encodeSetListeningMode(.adaptive)) == captured)
+    }
+
+    // MARK: - Structural invariants
 
     @Test("Every encoded packet is exactly 11 bytes")
     func packetLengthIsAlwaysEleven() {
