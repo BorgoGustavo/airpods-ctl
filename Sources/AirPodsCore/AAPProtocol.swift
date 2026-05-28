@@ -27,24 +27,29 @@ public enum ListeningMode: String, CaseIterable, Sendable {
 }
 
 public enum AAPProtocolConstants {
-    /// Empirically observed L2CAP CIDs on the AirPods Pro 2 connection (macOS
-    /// Tahoe 26.4.1 + AirPods firmware 8B39, captured 2026-05-28 — see
-    /// docs/captures/mode-transitions-2026-05-28.pklg).
+    /// L2CAP **CIDs** (Channel IDs) observed during a single `bluetoothd ↔
+    /// AirPods` session on 2026-05-28 — see
+    /// `docs/captures/mode-transitions-2026-05-28.pklg`.
     ///
-    /// AAP does **not** use a fixed PSM. The system's `bluetoothd` opens an
-    /// L2CAP connection during pairing and dispatches AAP traffic across
-    /// several dynamic CIDs. The interesting ones for the toggle MVP are
-    /// commandSend (host → AirPods) and statusReceive (AirPods → host).
-    public enum L2CAPChannels {
-        /// Host → AirPods commands and host-side heartbeats.
-        public static let commandSend: UInt16 = 0x060A
-        /// AirPods → host status notifications and command echoes (acks).
-        public static let statusReceive: UInt16 = 0x2A0D
-        /// AirPods → host short notifications, suspected touch events.
-        public static let notifications: UInt16 = 0x080C
-        /// AirPods → host telemetry stream with IEEE-754 little-endian floats,
-        /// suspected spatial-audio orientation data.
-        public static let telemetry: UInt16 = 0x2C0F
+    /// These are **session-specific** values negotiated when `bluetoothd`
+    /// opened its L2CAP channels. They are **not** part of the AAP protocol
+    /// and will be different on every reconnection. They have **no value for
+    /// opening a new L2CAP channel** — that needs a PSM, which is the well-
+    /// known "port" the AirPods firmware listens on. The PSM is still TBD
+    /// (Phase 2 reconnect capture).
+    ///
+    /// This enum is kept only as a parsing aid for the reference capture: if
+    /// you replay that `.pklg`, these are the CIDs that carry the four
+    /// observed AAP streams.
+    public enum ObservedSessionCIDs {
+        /// Bluetoothd → AirPods commands and ~500 ms host heartbeats.
+        public static let bluetoothdCommandSend: UInt16 = 0x060A
+        /// AirPods → bluetoothd status notifications and command echoes.
+        public static let bluetoothdStatusReceive: UInt16 = 0x2A0D
+        /// AirPods → bluetoothd short notifications, suspected touch / stem.
+        public static let bluetoothdNotifications: UInt16 = 0x080C
+        /// AirPods → bluetoothd telemetry, IEEE-754 LE floats (spatial audio?).
+        public static let bluetoothdTelemetry: UInt16 = 0x2C0F
     }
 
     public static let header: [UInt8] = [0x04, 0x00, 0x04, 0x00]
