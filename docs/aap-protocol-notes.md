@@ -8,23 +8,32 @@ mapped this protocol, see [`THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md).
 
 Raw captures live in `docs/captures/`.
 
-## Transport: L2CAP over BR/EDR, dynamic CIDs
+## Transport: L2CAP over BR/EDR — PSM still unknown, CIDs are per-session
 
-Contrary to the common assumption that AAP rides PSM `0x1001`, no fixed PSM
-was observed in `openL2CAPChannel_Result` traffic. The system's `bluetoothd`
-appears to open an L2CAP connection during pairing/connect and then
-multiplexes AAP traffic across several **dynamic Channel IDs** assigned per
-session. CIDs observed in our capture:
+The 2026-05-28 capture started **after** `bluetoothd` had already opened its
+L2CAP channels, so the L2CAP_CONNECTION_REQ exchanges that negotiated PSM
+and CIDs are missing from the trace. That means **the PSM AirPods Pro 2
+listens on for AAP is still unknown** for this firmware on Tahoe — a
+reconnect capture is required.
 
-| CID      | Direction        | Observed payload                                                |
-|----------|------------------|-----------------------------------------------------------------|
-| `0x060A` | host → AirPods   | Commands (incl. set-listening-mode) and ~500 ms heartbeats      |
-| `0x2A0D` | AirPods → host   | Status notifications and command echoes (acks)                  |
-| `0x080C` | AirPods → host   | Short 3-byte notifications, suspected touch / stem events       |
-| `0x2C0F` | AirPods → host   | Telemetry stream with IEEE-754 LE floats (spatial audio?)       |
+The four 16-bit values seen in the capture are **CIDs (Channel IDs)**, not
+PSMs. CIDs are session-local handles a stack receives in the
+`L2CAP_CONNECTION_RSP` from the peer; they are different on every
+reconnection. They cannot be passed to
+`IOBluetoothDevice.openL2CAPChannelAsync(_:withPSM:delegate:)` — that API
+wants a PSM (a well-known service identifier, like a TCP port). Confusing
+the two is a common trap.
 
-For the toggle MVP only `0x060A` (write) and `0x2A0D` (read for ack/state)
-matter.
+| Session CID (2026-05-28) | Direction              | Observed payload                                                |
+|--------------------------|------------------------|-----------------------------------------------------------------|
+| `0x060A`                 | bluetoothd → AirPods   | Commands (incl. set-listening-mode) + ~500 ms heartbeats        |
+| `0x2A0D`                 | AirPods → bluetoothd   | Status notifications and command echoes (acks)                  |
+| `0x080C`                 | AirPods → bluetoothd   | Short 3-byte notifications, suspected touch / stem events       |
+| `0x2C0F`                 | AirPods → bluetoothd   | Telemetry stream with IEEE-754 LE floats (spatial audio?)       |
+
+When `airpods-ctl` opens its own L2CAP channel via `IOBluetooth`, it will
+receive a **different** set of CIDs. The relevance of the CIDs above is
+purely as a parsing aid for the reference capture.
 
 ## Set listening mode
 
@@ -53,15 +62,19 @@ mechanism but is too slow to fit a sub-500 ms toggle path if waited on
 synchronously. Phase 4 should send-and-return; optional async verification
 can hang off the next invocation.
 
-## What we still don't know (open for Phase 2/3)
+## What we still don't know (open for Phase 2)
 
-- Whether a third-party process can hijack CID `0x060A` while `bluetoothd`
-  is also writing (heartbeats every ~500 ms). Likely needs `IOBluetooth` and
-  may require stopping or coexisting with the system writer.
-- The handshake/setup sequence used by `bluetoothd` when AirPods first
-  connect. We have not yet captured a clean reconnect from a cold state.
-- Whether `IOBluetoothL2CAPChannel.openL2CAPChannelAsync(_:withPSM:_:)` can
-  attach to an already-multiplexed connection or needs a brand-new one.
+- **The PSM.** The reference capture missed the `L2CAP_CONNECTION_REQ`. A
+  reconnect capture (case-closed → case-opened) is queued; that trace will
+  expose every PSM `bluetoothd` requests and the CIDs each one returns.
+- **How many channels.** Could be one shared channel multiplexed via the
+  inner `04 00 04 00 ...` framing, or several PSMs each carrying its own
+  stream (the four CIDs hint at this).
+- **Whether a second client can open the same PSM.** AirPods firmware may
+  reject a second connection on the same PSM (no second writer). If so,
+  `airpods-ctl` will have to coexist with `bluetoothd` somehow — possibly
+  by injecting frames into `bluetoothd`'s channel via a private API, or by
+  forcing `bluetoothd` off the device.
 
 ## Hardware/software under test
 
