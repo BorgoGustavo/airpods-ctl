@@ -1,87 +1,156 @@
 @testable import AirPodsCore
-import Foundation
 import Testing
 
 @Suite("AirPodsController")
 struct AirPodsControllerTests {
+    let airpods = AirPodsDevice(id: "aa-bb-cc-dd-ee-ff", name: "AirPods Pro")
+    let otherAirpods = AirPodsDevice(id: "11-22-33-44-55-66", name: "AirPods Max")
+
+    // MARK: - listDevices
+
     @Test("listDevices delegates to the transport and returns its result")
-    func listDevicesDelegates() async throws {
-        let devices = [
-            AirPodsDevice(id: UUID(), name: "AirPods Pro de Gustavo"),
-            AirPodsDevice(id: UUID(), name: "AirPods Pro 2"),
-        ]
-        let transport = MockTransport(discoveryResult: devices)
+    func listDevicesDelegates() throws {
+        let transport = FakeTransport(devices: [airpods, otherAirpods])
         let controller = AirPodsController(transport: transport)
 
-        let result = try await controller.listDevices()
+        let result = try controller.listDevices()
 
-        #expect(result == devices)
+        #expect(result == [airpods, otherAirpods])
     }
 
     @Test("listDevices propagates transport errors")
-    func listDevicesPropagatesErrors() async {
-        let transport = MockTransport(discoveryError: TransportError.permissionDenied)
+    func listDevicesPropagatesErrors() {
+        let transport = FakeTransport(discoveryError: .permissionDenied)
         let controller = AirPodsController(transport: transport)
 
-        do {
-            _ = try await controller.listDevices()
-            Issue.record("Expected listDevices to throw")
-        } catch let error as TransportError {
-            #expect(error == .permissionDenied)
-        } catch {
-            Issue.record("Wrong error type: \(error)")
+        #expect(throws: TransportError.permissionDenied) {
+            try controller.listDevices()
         }
     }
 
-    @Test("setMode encodes the documented packet and forwards it to send")
-    func setModeForwardsEncodedPacket() async throws {
-        let transport = MockTransport()
+    // MARK: - setMode
+
+    @Test("setMode targets the first connected AirPods")
+    func setModeTargetsFirstDevice() throws {
+        let transport = FakeTransport(devices: [airpods, otherAirpods])
         let controller = AirPodsController(transport: transport)
 
-        try await controller.setMode(.transparency)
+        try controller.setMode(.transparency)
 
-        let sent = transport.sentData
-        #expect(sent.count == 1)
-        let expected: [UInt8] = [0x04, 0x00, 0x04, 0x00, 0x09, 0x00, 0x0D, 0x03, 0x00, 0x00, 0x00]
-        #expect([UInt8](sent[0]) == expected)
+        #expect(transport.setCalls.count == 1)
+        #expect(transport.setCalls[0].mode == .transparency)
+        #expect(transport.setCalls[0].device == airpods)
     }
 
-    @Test("close forwards to the transport")
-    func closeForwards() async {
-        let transport = MockTransport()
+    @Test("setMode throws airPodsNotConnected when nothing is connected")
+    func setModeThrowsWhenDisconnected() {
+        let transport = FakeTransport(devices: [])
         let controller = AirPodsController(transport: transport)
 
-        await controller.close()
+        #expect(throws: TransportError.airPodsNotConnected) {
+            try controller.setMode(.anc)
+        }
+        #expect(transport.setCalls.isEmpty)
+    }
 
-        #expect(transport.closeCallCount == 1)
+    // MARK: - currentMode
+
+    @Test("currentMode reads the first connected AirPods")
+    func currentModeReadsFirstDevice() throws {
+        let transport = FakeTransport(devices: [airpods])
+        transport.modeByDevice[airpods.id] = .adaptive
+        let controller = AirPodsController(transport: transport)
+
+        #expect(try controller.currentMode() == .adaptive)
+    }
+
+    @Test("currentMode is nil when the transport cannot read the mode")
+    func currentModeNilWhenUnknown() throws {
+        let transport = FakeTransport(devices: [airpods])
+        let controller = AirPodsController(transport: transport)
+
+        #expect(try controller.currentMode() == nil)
+    }
+
+    @Test("currentMode throws airPodsNotConnected when nothing is connected")
+    func currentModeThrowsWhenDisconnected() {
+        let transport = FakeTransport(devices: [])
+        let controller = AirPodsController(transport: transport)
+
+        #expect(throws: TransportError.airPodsNotConnected) {
+            try controller.currentMode()
+        }
+    }
+
+    // MARK: - toggle
+
+    @Test("toggle switches ANC to Transparency")
+    func toggleFromANC() throws {
+        let transport = FakeTransport(devices: [airpods])
+        transport.modeByDevice[airpods.id] = .anc
+        let controller = AirPodsController(transport: transport)
+
+        let result = try controller.toggle()
+
+        #expect(result == .transparency)
+        #expect(transport.setCalls.map(\.mode) == [.transparency])
+    }
+
+    @Test("toggle switches Transparency to ANC")
+    func toggleFromTransparency() throws {
+        let transport = FakeTransport(devices: [airpods])
+        transport.modeByDevice[airpods.id] = .transparency
+        let controller = AirPodsController(transport: transport)
+
+        let result = try controller.toggle()
+
+        #expect(result == .anc)
+        #expect(transport.setCalls.map(\.mode) == [.anc])
+    }
+
+    @Test(
+        "toggle defaults to ANC when the mode is unknown or neither ANC/Transparency",
+        arguments: [ListeningMode?.none, .off, .adaptive]
+    )
+    func toggleDefaultsToANC(initial: ListeningMode?) throws {
+        let transport = FakeTransport(devices: [airpods])
+        transport.modeByDevice[airpods.id] = initial
+        let controller = AirPodsController(transport: transport)
+
+        let result = try controller.toggle()
+
+        #expect(result == .anc)
+        #expect(transport.setCalls.map(\.mode) == [.anc])
     }
 }
 
-final class MockTransport: BluetoothTransport, @unchecked Sendable {
-    let discoveryResult: [AirPodsDevice]
-    let discoveryError: Error?
-    private(set) var sentData: [Data] = []
-    private(set) var closeCallCount = 0
+final class FakeTransport: ListeningModeTransport {
+    struct SetCall {
+        let mode: ListeningMode
+        let device: AirPodsDevice
+    }
 
-    init(discoveryResult: [AirPodsDevice] = [], discoveryError: Error? = nil) {
-        self.discoveryResult = discoveryResult
+    var devices: [AirPodsDevice]
+    var discoveryError: TransportError?
+    var modeByDevice: [String: ListeningMode?] = [:]
+    private(set) var setCalls: [SetCall] = []
+
+    init(devices: [AirPodsDevice] = [], discoveryError: TransportError? = nil) {
+        self.devices = devices
         self.discoveryError = discoveryError
     }
 
-    func discoverConnectedAirPods() async throws -> [AirPodsDevice] {
-        if let error = discoveryError { throw error }
-        return discoveryResult
+    func connectedAirPods() throws -> [AirPodsDevice] {
+        if let discoveryError { throw discoveryError }
+        return devices
     }
 
-    func send(_ data: Data) async throws {
-        sentData.append(data)
+    func readListeningMode(of device: AirPodsDevice) throws -> ListeningMode? {
+        modeByDevice[device.id] ?? nil
     }
 
-    func receive() -> AsyncStream<Data> {
-        AsyncStream { _ in }
-    }
-
-    func close() async {
-        closeCallCount += 1
+    func setListeningMode(_ mode: ListeningMode, on device: AirPodsDevice) throws {
+        setCalls.append(SetCall(mode: mode, device: device))
+        modeByDevice[device.id] = mode
     }
 }
