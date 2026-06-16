@@ -7,3 +7,11 @@ DerivedData/
 .swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
 .netrc
 .playwright-cli/
+
+# Local reverse-engineering probes — hardcode one machine's device address,
+# superseded by docs/aap-protocol-notes.md. Kept out of the published repo.
+/scratch/
+
+# Reconnect capture kept local — its raw trace adds device addresses without
+# adding anything docs/aap-protocol-notes.md doesn't already summarize.
+/docs/captures/reconnect-handshake-2026-05-28.*
